@@ -1,1 +1,352 @@
+/** @format */
 
+.HomeContainer {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+}
+.navContainer {
+  background-color: #232323;
+  margin-top: 50px;
+}
+.navColor{
+  background-color: #232323 !important;
+}
+
+.carousalSectionOne {
+  background-color: #ff6548;
+}
+.carousalSection {
+  border-radius: 75px;
+  padding: 20px;
+  margin: 20px;
+  width: 319px;
+  height: 445px;
+}
+.carousalSectiontwo {
+  background-color: #df7af2;
+}
+.carousalSectionthree {
+  background-color: #b4a9f7;
+}
+.carousel-indicators [data-bs-target] {
+  height: 10px;
+  width: 80px;
+  position: relative;
+  border-radius: 14px;
+  top: 40px;
+  background-color: #b4a9f7 !important;
+}
+.bookNowButton {
+  width: 217px;
+  height: 37px;
+  margin-left: 40px;
+  border-radius: 75px;
+  background-color: #111111;
+  color: #ffffff;
+  border: none;
+  margin-top: 30px;
+}
+.logo {
+  width: 45px;
+  height: 45px;
+}
+.profileImg {
+  width: 27.5px;
+  height: 27.5px;
+  border-radius: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.carousalHeadings {
+  width: 284px;
+  height: 104px;
+  padding-top: 10px;
+  font-family: Raleway;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px gray;
+}
+.carousel-inner {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  padding: 20px;
+}
+.conatinerPortionIOne {
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.carousalSpan {
+  font-weight: 100;
+}
+.carousalImg {
+  width: 200px;
+  height: 200px;
+  margin-left: 50px;
+}
+.weAreText {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.headingText {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 53px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.portionOneDecs {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 335px;
+  height: 138px;
+}
+.servicesChoosePortion {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.servicesChooseContainer {
+  width: 350px;
+  height: 200px;
+  top: 887px;
+  left: 20px;
+  border-radius: 175px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.arrowIcon {
+  color: black;
+  margin-left: 20px;
+}
+.serviceBtn {
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.serviceImg {
+  width: 191px;
+  height: 189px;
+  border-radius: 94.5px;
+}
+.portionTwo {
+  height: 970px;
+  top: 1823px;
+  border-radius: 50px;
+  background: #1e1e1e;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.bestSalonText {
+  width: 300px;
+  height: 56px;
+  color: #ffffff;
+  left: 50px;
+  font-weight: 200;
+}
+.flexPortion {
+  display: flex;
+  flex-direction: row;
+}
+.spanContainer {
+  color: #ffffff;
+  font-weight: 700;
+}
+.countSalonText {
+  font-family: Noto Sans Symbols;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+.groomerSalonText {
+  width: 144.9433135986328px;
+  height: 23px;
+  top: 1968px;
+  left: 193.62109375px;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+.individualSalonImg {
+  width: 147.90133666992188px;
+  height: 150px;
+  top: 1943px;
+  left: 26px;
+  margin-right: 20px;
+  border-radius: 25px;
+}
+.descriptionAbouIndividualText {
+  width: 179.45362854003906px;
+  height: 104px;
+  top: 1999px;
+  left: 193.62109375px;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.exploreConatiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.exploreMoreBtn {
+  width: 178px;
+  height: 35px;
+  border-radius: 38px;
+  color: #ffffff;
+  background-color: #ff6548;
+  border: none;
+}
+.portionThree {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.salonText {
+  width: 297px;
+  height: 24px;
+  top: 3038px;
+  left: 44px;
+  color: #ffffff;
+  font-family: Raleway;
+  padding-top: 10px;
+}
+
+.descriptionText {
+  width: 311px;
+  height: 95px;
+  top: 3072px;
+  left: 47px;
+  color: #ffffff;
+  font-family: Raleway;
+  padding-top: 20px;
+}
+
+.btnConatiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.bookNowBtn {
+  width: 120px;
+  height: 25px;
+  top: 3177px;
+  left: 238px;
+  font-family: Raleway;
+  border-radius: 38px;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: #ff6548;
+  color: #ffffff;
+  border: none;
+  margin-top: 20px;
+}
+
+.salonImg {
+  width: 325px;
+  height: 200px;
+  top: 2823px;
+  left: 33px;
+  border-radius: 15px;
+}
+.footerContainer {
+  background-color: #232323;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.groomerText {
+  width: 122px;
+  height: 17.07px;
+  top: 3330.24px;
+  left: 20px;
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+.footerContent {
+  font-family: Raleway;
+  font-size: 8px;
+  font-weight: 300;
+  line-height: 9px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.copyRightsText {
+  font-family: Raleway;
+  font-size: 5px;
+  font-weight: 200;
+  line-height: 6px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  padding: 10px;
+}
+.icon {
+  color: #ffffff;
+  width: 22.5px;
+  height: 15px;
+  top: 3361px;
+  left: 169.5px;
+}
+.minIcon {
+  width: 12.032054901123047px;
+  height: 7.5px;
+  top: 3344px;
+  left: 142px;
+}
