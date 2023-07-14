@@ -1,0 +1,67 @@
+/** @format */
+
+.containerWhishlist {
+  height: 70vh;
+  width: 100vw;
+}
+
+.nestedContainer {
+  background-color: #000;
+}
+.flexBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.whishlistText {
+  font-family: Raleway;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: start;
+  color: #fff;
+  padding: 20px;
+}
+
+.childWhishLists {
+  border-radius: 25px;
+  background-color: #1e1e1e;
+  padding: 10px;
+  margin: 10px;
+}
+.listName {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+.listNameDesc {
+    color: #fff;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 16px;
+    text-align: left;
+}
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.heartIcon{
+    color: #fff;
+    margin: 20px;
+}
+@media screen and (min-width:768px) {
+  .hiddenContainer {
+      display: none;
+    }
+}
+@media screen and (max-width:768px) {
+  .flexBox {
+    display: none;
+  }
+}

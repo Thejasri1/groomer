@@ -1,0 +1,63 @@
+/** @format */
+
+.servicesContainer {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.servicesContainerBg {
+  /* background-image: url("https: //images.unsplash.com/photo-1600948836101-f9ffda59d250?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2Fsb258ZW58MHx8MHx8fDA%3D&w=1000&q=80"); */
+  background-color: #ff6548;
+  opacity: 0.4;
+  width: 100vw;
+  margin-bottom: 10px;
+  height: 346px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.servicesText {
+  font-family: Raleway;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 59px;
+  color: #fff;
+}
+.filterBtn {
+  width: 100px;
+  height: 25px;
+  border-radius: 45px;
+  color: #fff;
+  background-color: #ff6548;
+  border: none;
+}
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between !important;
+}
+.imgContainer {
+  border-radius: 50px;
+  background-color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px;
+}
+.salonImages {
+  width: 260px;
+  height: 225px;
+  border-radius: 25px;
+  margin: 10px;
+}
+.solonText {
+  color: #fff;
+  font-family: Raleway;
+}
+.location {
+  color: #fff;
+  margin: 5px;
+}

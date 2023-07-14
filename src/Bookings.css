@@ -1,0 +1,25 @@
+/** @format */
+
+.containerBookings{
+    height: 70vh;
+    width: 100vw;
+}
+.nestedContainer{
+    width: 100vw;
+    border-radius: 50px;
+    background-color: #1E1E1E;
+    height: 50vh;
+    position: relative;
+        top: 60px;
+}
+.bookingsText {
+  font-family: Raleway;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: start;
+  color: #fff;
+  padding: 20px;
+}
+

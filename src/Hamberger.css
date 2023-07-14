@@ -1,0 +1,25 @@
+/** @format */
+.containerMain{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+
+}
+.optionsList {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+li{
+    list-style-type: none;
+    cursor: pointer;
+}
