@@ -24,40 +24,38 @@ const Homepage = () => {
               alt="logo"
             />
           </a>
-
-          <div>
-            <i className="fa-solid fa-magnifying-glass icon"></i>
-            <a data-toggle="dropdown" className="dropdown">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT79drSQ14odOAATbriINtelDVq8POK854dBQ&usqp=CAU"
-                className="profileImg"
-                alt="profile"
-              />
-            </a>
-            <ul
-              className="dropdown-menu accSettingsList"
-              role="menu"
-              aria-labelledby="dLabel"
-            >
-              <li>
-                <p onClick={() => onDisplaySelectedContainer("bookings")}>
-                  Bookings
-                </p>
-              </li>
-              <li>
-                <p onClick={() => onDisplaySelectedContainer("whishlist")}>
-                  Whishlist
-                </p>
-              </li>
-            </ul>
+          <div className="d-flex">
+            <i className="fa-solid fa-magnifying-glass iconContainer"></i>
+            <div class="dropdown">
+              <a
+                href="#"
+                className="dropdown-toggle"
+                aria-expanded="false"
+                data-toggle="dropdown"
+              >
+                <i class="fa-solid fa-user iconContainer"></i>
+              </a>
+              <ul className="dropdown-menu accSettingsList" role="menu">
+                <li>
+                  <p onClick={() => onDisplaySelectedContainer("bookings")}>
+                    Bookings
+                  </p>
+                </li>
+                <li>
+                  <p onClick={() => onDisplaySelectedContainer("whishlist")}>
+                    Whishlist
+                  </p>
+                </li>
+              </ul>
+            </div>
             {hambergerOptions ? (
               <i
-                class="fa-solid fa-xmark icon"
+                class="fa-solid fa-xmark iconContainer"
                 onClick={() => setHambergerOptions(false)}
               ></i>
             ) : (
               <i
-                className="fa-solid fa-bars ml-2 icon"
+                className="fa-solid fa-bars ml-2 iconContainer"
                 onClick={() => setHambergerOptions(true)}
               ></i>
             )}

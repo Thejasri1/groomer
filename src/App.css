@@ -16,6 +16,7 @@
 .navColor {
   background-color: #232323 !important;
   width: 100vw;
+  padding-top: 20px;
 }
 .navbarFlexingContainer {
   width: 100vw;
@@ -60,13 +61,6 @@
 .logo {
   width: 45px;
   height: 45px;
-}
-.profileImg {
-  width: 27.5px;
-  height: 27.5px;
-  border-radius: 30px;
-  margin-left: 10px;
-  margin-right: 30px;
 }
 .carousalHeadings {
   width: 284px;
@@ -329,6 +323,10 @@
   width: 22.5px;
   height: 15px;
 }
+.iconContainer{
+  color: #ffffff;
+    margin: 20px;
+}
 .minIcon {
   width: 12.032054901123047px;
   height: 7.5px;
@@ -347,6 +345,7 @@
   text-align: center;
   padding: 10px;
   color: #ffffff !important;
+  margin-right: 100px !important;
 }
 .flexingMenubar {
   width: 100vw;
@@ -354,6 +353,10 @@
   flex-direction: row;
   justify-content: flex-end;
 }
+.dropdownSec {
+  margin-right: 50px !important;
+}
+
 .dropdown-menu > li {
   color: #ffffff !important;
   font-weight: 100 !important;
@@ -370,6 +373,11 @@
   text-align: center !important;
   cursor: pointer;
 }
+
+.dropdown-toggle::after {
+  display: none !important;
+  margin-left: 0px !important;
+}
 .dropdown-menu > li :hover {
   color: #ffffff !important;
   background-color: #7b7b7b !important;
@@ -378,6 +386,7 @@
   height: 25.0884952545166px !important;
   cursor: pointer;
 }
+
 .searchContainer {
   width: 200px;
   height: 40px;
@@ -393,9 +402,9 @@
   display: none;
 }
 @media screen and (max-width: 768px) {
-.indicatorBtn{
-  display: none;
-}
+  .indicatorBtn {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .salonImg {
@@ -460,12 +469,10 @@
     border-radius: 50px;
     color: #000 !important;
   }
-  .indicatorIcon{
+  .indicatorIcon {
     height: 40px;
     width: 40px;
     padding-top: 15px;
-
-
   }
   .carousalImg {
     margin-left: 100px;
