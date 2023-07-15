@@ -12,7 +12,12 @@ const Homepage = () => {
   const onDisplaySelectedContainer = (item) => {
     setSelectedItem(item);
   };
-
+  const [displaySearch, setDisplaySearch] = useState(false);
+  const onClickSearchIcon = () => {
+    setDisplaySearch(true);
+    setDisplaySearch(true);
+  };
+  console.log("displaySearch", displaySearch);
   return (
     <div className="HomeContainer">
       <nav className="navbar navbar-expand-lg navColor navbar-fixed-top shadow-lg">
@@ -25,7 +30,26 @@ const Homepage = () => {
             />
           </a>
           <div className="d-flex">
-            <i className="fa-solid fa-magnifying-glass iconContainer"></i>
+            {displaySearch && (
+              <div className="positionOfSearchbar">
+                <input
+                  type="text"
+                  className="inputSearch"
+                  placeholder="Search"
+                />
+              </div>
+            )}
+            {displaySearch ? (
+              <i
+                class="fa-solid fa-xmark iconContainer"
+                onClick={() => setDisplaySearch(false)}
+              ></i>
+            ) : (
+              <i
+                className="fa-solid fa-magnifying-glass iconContainer"
+                onClick={onClickSearchIcon}
+              ></i>
+            )}
             <div class="dropdown">
               <a
                 href="#"

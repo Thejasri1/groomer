@@ -1,7 +1,7 @@
 /** @format */
 .containerMain{
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: row;
    justify-content: center;
