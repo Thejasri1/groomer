@@ -24,7 +24,7 @@ const Homepage = () => {
         <div className="navbarFlexingContainer">
           <a className="navbar-brand">
             <img
-              src="https://images-platform.99static.com//4PO9Gj6lKoB-0LptrpO3qPiyAto=/38x0:1661x1623/fit-in/500x500/99designs-contests-attachments/114/114626/attachment_114626077"
+              src={process.env.PUBLIC_URL + "/gromerLogo.png"}
               className="logo"
               alt="logo"
             />
@@ -45,10 +45,12 @@ const Homepage = () => {
                 onClick={() => setDisplaySearch(false)}
               ></i>
             ) : (
-              <i
-                className="fa-solid fa-magnifying-glass iconContainer"
+              <img
+                src={process.env.PUBLIC_URL + "/Search.png"}
+                className="iconContainer"
+                alt="search"
                 onClick={onClickSearchIcon}
-              ></i>
+              />
             )}
             <div class="dropdown">
               <a
@@ -57,7 +59,11 @@ const Homepage = () => {
                 aria-expanded="false"
                 data-toggle="dropdown"
               >
-                <i class="fa-solid fa-user iconContainer"></i>
+                <img
+                  src={process.env.PUBLIC_URL + "/account.png"}
+                  className="iconContainer"
+                  alt="acc"
+                />
               </a>
               <ul className="dropdown-menu accSettingsList" role="menu">
                 <li>
@@ -78,10 +84,14 @@ const Homepage = () => {
                 onClick={() => setHambergerOptions(false)}
               ></i>
             ) : (
-              <i
-                className="fa-solid fa-bars ml-2 iconContainer"
+              <img
+                src={process.env.PUBLIC_URL + "/menu.png"}
+                height={40}
+                width={40}
+                alt="acc"
+                className="mt-4"
                 onClick={() => setHambergerOptions(true)}
-              ></i>
+              />
             )}
           </div>
         </div>
@@ -130,7 +140,7 @@ const Homepage = () => {
                         <div className="row">
                           <div className="col-12 col-md-6">
                             <img
-                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqO7TkxTKyTlLH8v5TzIV6cBeF_fRYzj3t8w&usqp=CAU"
+                              src={process.env.PUBLIC_URL + "/Wallet.png"}
                               className="carousalImg"
                               alt="carousalImg"
                             />
@@ -154,7 +164,7 @@ const Homepage = () => {
                         <div className="row">
                           <div className="col-12 col-md-6">
                             <img
-                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqO7TkxTKyTlLH8v5TzIV6cBeF_fRYzj3t8w&usqp=CAU"
+                              src={process.env.PUBLIC_URL + "/calender.png"}
                               className="carousalImg"
                               alt="carousalImgTwo"
                             />
@@ -179,7 +189,7 @@ const Homepage = () => {
                         <div className="row">
                           <div className="col-12 col-md-6">
                             <img
-                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqO7TkxTKyTlLH8v5TzIV6cBeF_fRYzj3t8w&usqp=CAU"
+                              src={process.env.PUBLIC_URL + "/aI.png"}
                               className="carousalImg"
                               alt="carousalImgThree"
                             />
@@ -232,10 +242,14 @@ const Homepage = () => {
                   </div>
                   <div className="col-12 col-lg-6">
                     <p className="portionOneDecs">
-                      Online salon apps make it easy to book salon appointments
-                      from home. Browse salons, read reviews, and book
-                      appointments in just a few taps. Many apps also offer
-                      discounts and promotions.
+                      <span className="spans"> Online </span> salon apps make it
+                      easy to book salon
+                      <span className="spans"> appointments </span>
+                      from home. Browse salons, read reviews, and
+                      <span className="spans"> book </span> appointments in just
+                      a<span className="spans"> few taps</span>. Many apps also
+                      offer <span className="spans"> discounts </span> and
+                      promotions.
                     </p>
                   </div>
                 </div>
@@ -246,16 +260,15 @@ const Homepage = () => {
             <div className="container">
               <div className="row">
                 <div className="col-12 col-md-4">
-                  <div className="servicesChooseContainer">
-                    <img
-                      src="https://cdn-icons-png.flaticon.com/512/1751/1751437.png"
-                      alt="serviceOption"
-                      className="serviceImg"
-                    />
-                  </div>
+                  <img
+                    src={process.env.PUBLIC_URL + "/bestSalon.png"}
+                    alt="serviceOption"
+                    width={320}
+                    height={200}
+                  />
                   <div>
                     <button className="serviceBtn">
-                      Best Salons in city
+                      Best <strong>salons</strong> in city
                       <i className="fa-solid fa-arrow-right-long arrowIcon"></i>
                     </button>
                   </div>
@@ -269,9 +282,55 @@ const Homepage = () => {
                   </div>
                 </div>
               </div>
+              <div className="row">
+                <div className="col-12 col-md-4">
+                  <img
+                    src={process.env.PUBLIC_URL + "/bestService.png"}
+                    alt="serviceOption"
+                    width={320}
+                    height={200}
+                  />
+                  <div>
+                    <button className="serviceBtn">
+                      Best <strong>services</strong> in city
+                      <i className="fa-solid fa-arrow-right-long arrowIcon"></i>
+                    </button>
+                  </div>
+                </div>
+                <div className="col-md-8">
+                  <div className="portionThreeVisible">
+                    <p style={{ color: "white" }}>we give</p>
+                    <h1 className="bestSalonText">Best service in city</h1>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-12 col-md-4">
+                  <img
+                    src={process.env.PUBLIC_URL + "/serviceWithLove.png"}
+                    alt="serviceOption"
+                    width={320}
+                    height={200}
+                  />
+                  <div>
+                    <button className="serviceBtn">
+                      Best <strong>service</strong> with love
+                      <i className="fa-solid fa-arrow-right-long arrowIcon"></i>
+                    </button>
+                  </div>
+                </div>
+                <div className="col-md-8">
+                  <div className="portionThreeVisible">
+                    <p style={{ color: "white" }}>we need</p>
+                    <h1 className="bestSalonText">
+                      A happy Smile and appreciations
+                    </h1>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="portionTwo m-3">
+          <div className="portionTwo m-3 mb-5">
             <div className="alignPortionTwo">
               <strong className="spanContainer">The</strong>
               <h1 className="bestSalonText">
@@ -284,7 +343,7 @@ const Homepage = () => {
                   <div className="flexPortion">
                     <div>
                       <img
-                        src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2Fsb258ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+                        src={process.env.PUBLIC_URL + "/salonOne.png"}
                         alt="salonImg"
                         className="individualSalonImg"
                       />
@@ -293,7 +352,7 @@ const Homepage = () => {
                       <h1 className="countSalonText">#1</h1>
                       <h1 className="groomerSalonText">Groomer salon</h1>
                       <p className="descriptionAbouIndividualText">
-                        the saloon with two best in class groomers in the same
+                        the salon with two best in class groomers in the same
                         salon gives you b est style and look with master level
                         talent.
                       </p>
@@ -305,7 +364,7 @@ const Homepage = () => {
                   <div className="flexPortion">
                     <div>
                       <img
-                        src="https://media.istockphoto.com/id/1288801785/photo/barber-shop.jpg?s=612x612&w=0&k=20&c=R4e9Ts7MaRN2DaGTebLtiu_ThxRk2cGUefbQneL90ro="
+                        src={process.env.PUBLIC_URL + "/salonTwo.png"}
                         alt="salonImg"
                         className="individualSalonImg"
                       />
@@ -314,7 +373,7 @@ const Homepage = () => {
                       <h1 className="countSalonText">#2</h1>
                       <h1 className="groomerSalonText">Groomer salon</h1>
                       <p className="descriptionAbouIndividualText">
-                        the saloon with two best in class groomers in the same
+                        the salon with two best in class groomers in the same
                         salon gives you b est style and look with master level
                         talent.
                       </p>
@@ -325,7 +384,7 @@ const Homepage = () => {
                   <div className="flexPortion">
                     <div>
                       <img
-                        src="https://i.pinimg.com/564x/65/29/96/652996900ce350a260f34af4cecd7cb9.jpg"
+                        src={process.env.PUBLIC_URL + "/salonThree.png"}
                         alt="salonImg"
                         className="individualSalonImg"
                       />
@@ -334,7 +393,7 @@ const Homepage = () => {
                       <h1 className="countSalonText">#3</h1>
                       <h1 className="groomerSalonText">Groomer salon</h1>
                       <p className="descriptionAbouIndividualText">
-                        the saloon with two best in class groomers in the same
+                        the salon with two best in class groomers in the same
                         salon gives you b est style and look with master level
                         talent.
                       </p>
@@ -345,7 +404,7 @@ const Homepage = () => {
                   <div className="flexPortion">
                     <div>
                       <img
-                        src="https://i.pinimg.com/originals/e9/05/20/e90520c257bbaa5435b8694e3817070c.jpg"
+                        src={process.env.PUBLIC_URL + "/salonFour.png"}
                         alt="salonImg"
                         className="individualSalonImg"
                       />
@@ -354,7 +413,7 @@ const Homepage = () => {
                       <h1 className="countSalonText">#4</h1>
                       <h1 className="groomerSalonText">Groomer salon</h1>
                       <p className="descriptionAbouIndividualText">
-                        the saloon with two best in class groomers in the same
+                        the salon with two best in class groomers in the same
                         salon gives you b est style and look with master level
                         talent.
                       </p>
@@ -364,39 +423,38 @@ const Homepage = () => {
               </div>
             </div>
             <div className="exploreConatiner">
-              <button className="exploreMoreBtn">Explore more</button>
+              <button className="exploreMoreBtn mb-5">Explore more</button>
             </div>
           </div>
-          <div className="container">
-            <div className="row flexing">
+          <div className="container salonHomeContainer">
+            <div className="row">
               <div className="col-12 col-md-6">
                 <img
-                  src="https://thumbs.dreamstime.com/b/men-hair-salon-barber-doing-haircut-barbershop-handsome-male-client-hairdresser-high-resolution-men-hair-salon-barber-doing-121115496.jpg"
+                  src={process.env.PUBLIC_URL + "/trimming.png"}
                   alt="salimg"
                   className="salonImg"
                 />
               </div>
               <div className="col-12 col-md-6">
-                <h2 className="salonText">
-                  <i className="fa-solid fa-house homeIcon"></i>Home salon
-                  services
-                </h2>
-                <h2 className="salonText">Starts very soon..</h2>
-                <br />
-                <bold className="salonText">
-                  Follow us instagram and twitter to get
-                  <br />
-                  notified
-                </bold>
+                <div className="mobileViewHidden">
+                  <h2 className="salonText">
+                    <i className="fa-solid fa-house homeIcon"></i>Home salon
+                    services
+                  </h2>
+                  <h2 className="salonText">Starts very soon..</h2>
+                  <bold className="salonText">
+                    Follow us instagram and twitter to get notified
+                  </bold>
+                </div>
                 <h1 className="salonText">Salon at your home</h1>
                 <p className="descriptionText">
-                  The saloon with two best in class groomers in the same salon
+                  The salon with two best in class groomers in the same salon
                   gives you b est style and look with master level talent. at
                   your house. and prices are identical to salon. no worry about
                   timing and traffic. we will take all your pressure to give you
                   best service at your door steps.
                 </p>
-                <div className="mt-5">
+                <div className="bookNowBtnContainer">
                   <button className="bookNowBtn">Book Now</button>
                 </div>
               </div>
@@ -407,30 +465,54 @@ const Homepage = () => {
       <div className="footerContainer">
         <footer>
           <div className="flexContainer">
-            <div>
+            <div className="px-2 pt-2">
               <h1 className="groomerText">Groomer.live</h1>
             </div>
             <div>
               <p className="footerContent">
-                <i className="fa-regular fa-envelope minIcon"></i>
+                <img
+                  src={process.env.PUBLIC_URL + "/gmailLogo.png"}
+                  className="minIcon"
+                />
                 Groomer.online@gmail.com
               </p>
               <p className="footerContent">
-                <i className="fa-solid fa-phone minIcon"></i>+91 9876543210
+                <img
+                  src={process.env.PUBLIC_URL + "/WhatsApp.png"}
+                  className="minIcon"
+                />
+                +91 9876543210
               </p>
               <p className="footerContent">
-                <i className="fa-solid fa-location-dot minIcon"></i>Hi-tech
-                city, Hyderabad.
+                <img
+                  src={process.env.PUBLIC_URL + "/location.png"}
+                  className="minIcon"
+                />
+                Hi-tech city, Hyderabad.
               </p>
               <div className="flexContainer">
-                <i className="fa-brands fa-linkedin icon"></i>
-                <i className="fa-brands fa-twitter icon"></i>
-                <i className="fa-brands fa-instagram icon"></i>
+                <img
+                  src={process.env.PUBLIC_URL + "/LinkedIn.png"}
+                  className="icon"
+                />
+                <img
+                  src={process.env.PUBLIC_URL + "/Twitter.png"}
+                  className="icon"
+                />
+                <img
+                  src={process.env.PUBLIC_URL + "/Instagram.png"}
+                  className="icon"
+                />
               </div>
             </div>
             <div>
-              <p className="footerContent pt-5">
-                Privacy and Policy Terms and Conditions
+              <p className="footerContent pt-5 hiddenPolicy">
+                Terms and Conditions
+                <br />
+                Privacy and Policy
+              </p>
+              <p className="footerContent pt-5 hiddenTerms">
+                Terms and Conditions Privacy and Policy
               </p>
             </div>
           </div>

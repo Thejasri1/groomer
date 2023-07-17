@@ -9,7 +9,7 @@ const Services = () => {
       </div>
       <div className="flexContainer">
         <button className="filterBtn">Filter</button>
-        <div>
+        <div className="px-3">
           <p className="salonText">Location</p>
         </div>
       </div>
