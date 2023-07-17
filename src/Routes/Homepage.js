@@ -17,7 +17,7 @@ const Homepage = () => {
     setDisplaySearch(true);
     setDisplaySearch(true);
   };
-  console.log("displaySearch", displaySearch);
+
   return (
     <div className="HomeContainer">
       <nav className="navbar navbar-expand-lg navColor navbar-fixed-top shadow-lg">
@@ -138,22 +138,25 @@ const Homepage = () => {
                     <div className="carousel-item active">
                       <div className="carousalSection carousalSectionOne">
                         <div className="row">
-                          <div className="col-12 col-md-6">
+                          <div className="col-12 col-md-4">
                             <img
                               src={process.env.PUBLIC_URL + "/Wallet.png"}
                               className="carousalImg"
                               alt="carousalImg"
                             />
                           </div>
-                          <div className="col-12 col-md-6">
-                            <p className="carousalHeadings">
+                          <div className="col-12 col-md-8 carousalText carousalHeadings">
+                            <span className="carousalInnerTextDeskview">
                               Great salon
-                              <span className="carousalSpan">services</span>
-                              <br />
-                              <span className="carousalSpan">that won't</span>
-                              <br />
+                            </span>
+                            <span className="carousalSpan"> services </span>
+                            <br />
+                            <span className="carousalSpan"> that won't </span>
+                            <br />
+                            <span className="carousalInnerTextDeskview">
                               empty your pockets
-                            </p>
+                            </span>
+                            <br />
                             <button className="bookNowButton">Book Now</button>
                           </div>
                         </div>
@@ -165,43 +168,44 @@ const Homepage = () => {
                           <div className="col-12 col-md-6">
                             <img
                               src={process.env.PUBLIC_URL + "/calender.png"}
-                              className="carousalImg"
+                              className="carousalImg alignLeftImg"
                               alt="carousalImgTwo"
                             />
                           </div>
-                          <div className="col-12 col-md-6">
-                            <p className="carousalHeadings">
+                          <div className="col-12 col-md-6 carousalText carousalHeadings">
+                            <span className="carousalInnerTextDeskview">
                               Time
-                              <span className="carousalSpan">is money</span>
-                              <br />
-                              <span className="carousalSpan">Let's not</span>
-                              <br />
+                            </span>
+                            <span className="carousalSpan"> is money</span>
+                            <br />
+                            <span className="carousalSpan"> Let's not</span>
+                            <br />
+                            <span className="carousalInnerTextDeskview">
                               Waste either
-                            </p>
+                            </span>
                             <button className="bookNowButton">Book Now</button>
                           </div>
                         </div>
                       </div>
                     </div>
-
                     <div className="carousel-item">
                       <div className="carousalSection carousalSectionthree">
                         <div className="row">
                           <div className="col-12 col-md-6">
                             <img
                               src={process.env.PUBLIC_URL + "/aI.png"}
-                              className="carousalImg"
+                              className="carousalImg alignLeftImg"
                               alt="carousalImgThree"
                             />
                           </div>
-                          <div className="col-12 col-md-6">
-                            <p className="carousalHeadings">
-                              <span className="carousalSpan">
-                                The future of hair is
-                              </span>
-                              <br />
+                          <div className="col-12 col-md-6 carousalText carousalHeadings">
+                            <span className="carousalSpan">
+                              The future of hair is
+                            </span>
+                            <br />
+                            <span className="carousalInnerTextDeskview">
                               Digital
-                            </p>
+                            </span>
                             <button className="bookNowButton">Book Now</button>
                           </div>
                         </div>
@@ -330,103 +334,125 @@ const Homepage = () => {
               </div>
             </div>
           </div>
-          <div className="portionTwo m-3 mb-5">
-            <div className="alignPortionTwo">
-              <strong className="spanContainer">The</strong>
-              <h1 className="bestSalonText">
-                Best groomer in <span className="spanContainer">city</span>
-              </h1>
-            </div>
-            <div className="container">
-              <div className="row">
-                <div className="col-12 col-md-6">
-                  <div className="flexPortion">
-                    <div>
-                      <img
-                        src={process.env.PUBLIC_URL + "/salonOne.png"}
-                        alt="salonImg"
-                        className="individualSalonImg"
-                      />
-                    </div>
-                    <div>
-                      <h1 className="countSalonText">#1</h1>
-                      <h1 className="groomerSalonText">Groomer salon</h1>
-                      <p className="descriptionAbouIndividualText">
-                        the salon with two best in class groomers in the same
-                        salon gives you b est style and look with master level
-                        talent.
-                      </p>
+          <div className="largeViewMargin">
+            <div className="portionTwo mb-5">
+              <div className="alignPortionTwo">
+                <strong className="spanContainer">The</strong>
+                <h1 className="bestSalonText">
+                  Best groomer in <span className="spanContainer">city</span>
+                </h1>
+              </div>
+              <div className="container-fluid">
+                <div className="row">
+                  <div className="col-12 col-md-6">
+                    <div className="flexPortion">
+                      <div class="img">
+                        <img
+                          src={process.env.PUBLIC_URL + "/likeHeart.png"}
+                          alt="salonImg"
+                          className="likeContainer"
+                        />
+                        <img
+                          src={process.env.PUBLIC_URL + "/salonOne.png"}
+                          alt="salonImg"
+                          className="individualSalonImg"
+                        />
+                      </div>
+                      <div className="portionAlign">
+                        <h1 className="countSalonText">#1</h1>
+                        <h1 className="groomerSalonText">Groomer salon</h1>
+                        <p className="descriptionAbouIndividualText">
+                          the salon with two best in class groomers in the same
+                          salon gives you b est style and look with master level
+                          talent.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div className="col-12 col-md-6">
-                  <div className="flexPortion">
-                    <div>
-                      <img
-                        src={process.env.PUBLIC_URL + "/salonTwo.png"}
-                        alt="salonImg"
-                        className="individualSalonImg"
-                      />
-                    </div>
-                    <div>
-                      <h1 className="countSalonText">#2</h1>
-                      <h1 className="groomerSalonText">Groomer salon</h1>
-                      <p className="descriptionAbouIndividualText">
-                        the salon with two best in class groomers in the same
-                        salon gives you b est style and look with master level
-                        talent.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-md-6">
-                  <div className="flexPortion">
-                    <div>
-                      <img
-                        src={process.env.PUBLIC_URL + "/salonThree.png"}
-                        alt="salonImg"
-                        className="individualSalonImg"
-                      />
-                    </div>
-                    <div>
-                      <h1 className="countSalonText">#3</h1>
-                      <h1 className="groomerSalonText">Groomer salon</h1>
-                      <p className="descriptionAbouIndividualText">
-                        the salon with two best in class groomers in the same
-                        salon gives you b est style and look with master level
-                        talent.
-                      </p>
+                  <div className="col-12 col-md-6">
+                    <div className="flexPortion">
+                      <div class="img">
+                        <img
+                          src={process.env.PUBLIC_URL + "/likeHeart.png"}
+                          alt="salonImg"
+                          className="likeContainer"
+                        />
+                        <img
+                          src={process.env.PUBLIC_URL + "/salonTwo.png"}
+                          alt="salonImg"
+                          className="individualSalonImg"
+                        />
+                      </div>
+                      <div className="portionAlign">
+                        <h1 className="countSalonText">#2</h1>
+                        <h1 className="groomerSalonText">Groomer salon</h1>
+                        <p className="descriptionAbouIndividualText">
+                          the salon with two best in class groomers in the same
+                          salon gives you b est style and look with master level
+                          talent.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="col-12 col-md-6">
-                  <div className="flexPortion">
-                    <div>
-                      <img
-                        src={process.env.PUBLIC_URL + "/salonFour.png"}
-                        alt="salonImg"
-                        className="individualSalonImg"
-                      />
+                  <div className="col-12 col-md-6">
+                    <div className="flexPortion">
+                      <div class="img">
+                        <img
+                          src={process.env.PUBLIC_URL + "/likeHeart.png"}
+                          alt="salonImg"
+                          className="likeContainer"
+                        />
+                        <img
+                          src={process.env.PUBLIC_URL + "/salonThree.png"}
+                          alt="salonImg"
+                          className="individualSalonImg"
+                        />
+                      </div>
+                      <div className="portionAlign">
+                        <h1 className="countSalonText">#3</h1>
+                        <h1 className="groomerSalonText">Groomer salon</h1>
+                        <p className="descriptionAbouIndividualText">
+                          the salon with two best in class groomers in the same
+                          salon gives you b est style and look with master level
+                          talent.
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <h1 className="countSalonText">#4</h1>
-                      <h1 className="groomerSalonText">Groomer salon</h1>
-                      <p className="descriptionAbouIndividualText">
-                        the salon with two best in class groomers in the same
-                        salon gives you b est style and look with master level
-                        talent.
-                      </p>
+                  </div>
+                  <div className="col-12 col-md-6">
+                    <div className="flexPortion">
+                      <div class="img">
+                        <img
+                          src={process.env.PUBLIC_URL + "/likeHeart.png"}
+                          alt="salonImg"
+                          className="likeContainer"
+                        />
+                        <img
+                          src={process.env.PUBLIC_URL + "/salonFour.png"}
+                          alt="salonImg"
+                          className="individualSalonImg"
+                        />
+                      </div>
+                      <div className="portionAlign">
+                        <h1 className="countSalonText">#4</h1>
+                        <h1 className="groomerSalonText">Groomer salon</h1>
+                        <p className="descriptionAbouIndividualText">
+                          the salon with two best in class groomers in the same
+                          salon gives you b est style and look with master level
+                          talent.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="exploreConatiner">
-              <button className="exploreMoreBtn mb-5">Explore more</button>
+              <div className="exploreConatiner">
+                <button className="exploreMoreBtn mb-5">Explore more</button>
+              </div>
             </div>
           </div>
-          <div className="container salonHomeContainer">
+          <div className="container-fulid salonHomeContainer">
             <div className="row">
               <div className="col-12 col-md-6">
                 <img
@@ -437,23 +463,34 @@ const Homepage = () => {
               </div>
               <div className="col-12 col-md-6">
                 <div className="mobileViewHidden">
-                  <h2 className="salonText">
-                    <i className="fa-solid fa-house homeIcon"></i>Home salon
-                    services
-                  </h2>
-                  <h2 className="salonText">Starts very soon..</h2>
-                  <bold className="salonText">
-                    Follow us instagram and twitter to get notified
-                  </bold>
+                  <div className="d-flex">
+                    <img
+                      src={process.env.PUBLIC_URL + "/Home.png"}
+                      alt="salimg"
+                      width={115}
+                      height={98}
+                    />
+                    <div>
+                      <h2 className="spanHome">Home salon services</h2>
+                      <h2 className="salonText">Starts very soon..</h2>
+                      <bold className="salonText">
+                        Follow us instagram and twitter to get notified
+                      </bold>
+                    </div>
+                  </div>
                 </div>
-                <h1 className="salonText">Salon at your home</h1>
-                <p className="descriptionText">
-                  The salon with two best in class groomers in the same salon
-                  gives you b est style and look with master level talent. at
-                  your house. and prices are identical to salon. no worry about
-                  timing and traffic. we will take all your pressure to give you
-                  best service at your door steps.
-                </p>
+                <h1 className="salonText hiddenTextLapView">
+                  Salon at your home
+                </h1>
+                <div className="textAlign">
+                  <p className="descriptionText">
+                    The salon with two best in class groomers in the same salon
+                    gives you b est style and look with master level talent. at
+                    your house. and prices are identical to salon. no worry
+                    about timing and traffic. we will take all your pressure to
+                    give you best service at your door steps.
+                  </p>
+                </div>
                 <div className="bookNowBtnContainer">
                   <button className="bookNowBtn">Book Now</button>
                 </div>

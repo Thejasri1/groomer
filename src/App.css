@@ -72,13 +72,15 @@
   color: #ffffff;
   border: none;
   margin-top: 30px;
+  font-weight: 100;
+  font-family: Raleway;
+  font-size: 20px;
 }
 .logo {
   width: 45px;
   height: 45px;
 }
 .carousalHeadings {
-  width: 284px;
   height: 104px;
   padding-top: 10px;
   font-family: Raleway;
@@ -181,11 +183,11 @@
   color: #ffffff;
   font-weight: 200;
 }
-.flexPortion {
+/* .flexPortion {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
+} */
 .spanContainer {
   color: #ffffff;
   font-weight: 700;
@@ -205,7 +207,8 @@
 .individualSalonImg {
   width: 150px;
   height: 150px;
-  margin: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
   border-radius: 25px;
 }
 
@@ -426,8 +429,85 @@
   .minIcon {
     margin-right: 5px;
   }
+  .salonHomeContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  .textAlign {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: justify;
+  }
+  .likeContainer {
+    border-radius: 20px;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+  }
+  .img {
+    position: relative;
+  }
+
+  .img .likeContainer {
+    top: 0%;
+    right: 0%;
+    position: absolute;
+  }
+  .flexPortion {
+    display: flex;
+  }
 }
 @media screen and (min-width: 768px) {
+  .img {
+    position: relative;
+  }
+  .img .likeContainer {
+    top: 5%;
+    right: 10%;
+    position: absolute;
+  }
+  .largeViewMargin{
+    margin: 100px;
+  }
+  .exploreMoreBtn {
+    width: 384px;
+    height: 91px;
+    border-radius: 38px;
+  }
+  .likeContainer {
+    padding: 5px;
+    border-radius: 30px;
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+  }
+  .carousalSpan {
+    font-weight: 400;
+    font-size: 40px;
+  }
+  .bookNowButton {
+    display: none;
+  }
+  .carousalSpan {
+    font-weight: 400;
+  }
+  .hiddenTextLapView {
+    display: none;
+  }
+  .spanHome {
+    font-weight: 100 !important;
+    color: #ffffff;
+    line-height: 0px;
+  }
+  .bookNowBtnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   .descriptionAbouIndividualText {
     color: #ffffff;
     font-family: Raleway;
@@ -442,6 +522,14 @@
   }
   .bookNowBtn {
     margin-top: 40px;
+    width: 200px;
+    height: 50px;
+  }
+  .descriptionText {
+    font-size: 30px;
+    font-weight: 400;
+    width: 625px;
+    height: 269px;
   }
   .minIcon {
     margin-right: 10px;
@@ -450,8 +538,11 @@
     padding-top: 40px;
   }
   .salonHomeContainer {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    background-color: #1e1e1e4d;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    height: 600px;
   }
   .hiddenPolicy {
     display: none;
@@ -460,8 +551,9 @@
     display: block;
   }
   .salonImg {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
+    margin-left: 210px;
     border-radius: 72px;
   }
   .footerContainer {
@@ -471,9 +563,29 @@
     padding: 40px;
   }
   .individualSalonImg {
-    width: 150px;
-    height: 150px;
-    margin: 20px;
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+    border-radius: 40px;
+  }
+  .flexPortion {
+    display: flex;
+  }
+  .countSalonText {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 0px;
+  }
+  .portionAlign {
+    padding-top: 40px;
+  }
+  .groomerSalonText {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .descriptionAbouIndividualText {
+    font-size: 20px;
+    font-weight: 100;
   }
   .headingText {
     font-size: 128px;
@@ -494,7 +606,9 @@
     display: block;
   }
   .groomerText {
-    font-size: 20px;
+    font-size: 64px;
+    font-weight: 700;
+    padding-top: 40px;
   }
   .alignPortionTwo {
     padding-left: 100px;
@@ -515,8 +629,13 @@
 
   .carousalSection {
     width: 80vw;
-    height: 300px;
+    height: 400px;
     border-radius: 290px;
+  }
+  .carousalInnerTextDeskview {
+    font-weight: 800;
+    font-size: 79px;
+    line-height: 92px;
   }
   .indicatorBtn {
     background-color: #ffffff !important;
@@ -531,8 +650,15 @@
     padding-top: 15px;
   }
   .carousalImg {
-    margin-left: 100px;
-    margin-top: 30px;
+    height: 343px;
+    width: 309px;
+  }
+  .alignLeftImg {
+    margin-left: 200px;
+  }
+  .carousalText {
+    height: 268px;
+    padding-top: 70px;
   }
   .portionThreeVisible:first-of-type {
     margin-right: 200px;
