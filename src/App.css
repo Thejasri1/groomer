@@ -5,12 +5,12 @@
   height: 100vh;
   width: 100vw;
   overflow-y: scroll;
+  overflow-x: none;
   position: relative;
 }
 
 .navContainer {
   background-color: #232323;
-  margin-top: 60px;
 }
 .navbar-fixed-top {
   position: fixed !important;

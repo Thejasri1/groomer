@@ -20,7 +20,7 @@ const Homepage = () => {
 
   return (
     <div className="HomeContainer">
-      <nav className="navbar navbar-expand-lg navColor navbar-fixed-top shadow-lg">
+      <nav className="navbar navbar-expand-lg navColor shadow-lg">
         <div className="navbarFlexingContainer">
           <a className="navbar-brand">
             <img
